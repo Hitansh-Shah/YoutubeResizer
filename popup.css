@@ -1,0 +1,54 @@
+h4 {
+    width: 300px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#activate {
+    background-color: rgb(26, 255, 26);
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+}
+
+.size-handler {
+    display: none;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+.handle {
+    border: none;
+    background: none;
+    font-weight: lighter;
+}
+.min {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.max {
+    font-size: 20px;
+}
+
+.size-div {
+    display: flex;
+    align-items: center;
+}
+
+.size {
+    margin: 0x;
+}
+
+.handle:hover {
+    cursor: pointer;
+}
+
+#activate:hover {
+    cursor: pointer;
+}
