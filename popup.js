@@ -47,7 +47,7 @@ const onActivate = async () => {
                 return chrome.storage.sync.set({ isActive })
             } else {
                 const addIframe = async () => {
-                    let Str = `<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>My youube</title> </head> <body> <iframe src=${document.URL.replace("?v=", "/").replace("watch","embed")} frameborder="0" style="width: 100vw; height: 100vh" class="myiframe"> </iframe> </body></html>`
+                    let Str = `<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Youtube Resized</title> </head> <body> <iframe src=${document.URL.replace("?v=", "/").replace("watch","embed").replace("&", "?")} frameborder="0" style="width: 100vw; height: 100vh" class="myiframe"> </iframe> </body></html>`
                     var newHTML = document.open("text/html", "replace");
                     newHTML.write(Str);
                     newHTML.close();
